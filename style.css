@@ -1,11 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Roboto:wght@400;700&family=Ubuntu&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    color: antiquewhite;
+    background: linear-gradient(90deg, rgba(90,6,110,1) 10%, rgba(49,13,175,1) 70%);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,4 +15,43 @@ body {
     height: 100vh;
     overflow: hidden;
     margin: 0;
+}
+
+.btn {
+    background-color: antiquewhite;
+    font-weight: bolder;
+    color: rebeccapurple;
+    font-family: inherit;
+    padding: .75rem;
+    border-radius: 6px;;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:active {
+transform: scale(0.98);
+}
+
+#toasts {
+    position: fixed;
+    top: 50px;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.toast {
+    background-color: antiquewhite;
+    color:rebeccapurple;
+    border-radius: 6px;
+    padding: 1.2rem 2.4rem;
+    margin: 0.5rem;
+    box-shadow: 15px 16px 28px 0px rgba(0,0,0,0.84);
 }
